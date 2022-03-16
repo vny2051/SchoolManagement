@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="250dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_1"
+        android:src="@drawable/logo_app" />
+
+    <EditText
+        android:id="@+id/et_mob_number"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/img1"
+        android:layout_marginTop="15dp"
+        android:hint="@string/mobile"
+        android:inputType="phone"/>
+
+    <EditText
+        android:id="@+id/et_otp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/et_mob_number"
+        android:layout_marginTop="-2dp"
+        android:hint="@string/otp"
+        android:inputType="number"/>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/otp_btn"
+        style="@style/buttonTheme"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_size"
+        android:layout_below="@id/et_otp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="5dp"
+        android:text="@string/gO"/>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/login_btn"
+        style="@style/buttonTheme"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_size"
+        android:layout_below="@id/otp_btn"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:text="@string/L"
+        android:visibility="gone"/>
+
+
+
+</RelativeLayout>
+
+
+

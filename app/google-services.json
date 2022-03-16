@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "851217051335",
+    "project_id": "gradeapp-87a94",
+    "storage_bucket": "gradeapp-87a94.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:851217051335:android:486343927c767cf2a5d8e2",
+        "android_client_info": {
+          "package_name": "com.overseastechnologies.GradeApp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "851217051335-0l7uhm32lfdaj6cqjjnc91uq2oh57mtb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAF--15UxoTWg8kFjEcunLcEwV_SryZVAE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "851217051335-0l7uhm32lfdaj6cqjjnc91uq2oh57mtb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

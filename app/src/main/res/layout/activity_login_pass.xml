@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="250dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_1"
+        android:src="@drawable/logo_app" />
+
+    <EditText
+        android:id="@+id/et_user_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/img1"
+        android:layout_marginTop="15dp"
+        android:hint="Enter Your Username Here"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/et_user_name"
+        android:layout_marginTop="-2dp"
+        android:hint="Enter Your Password Here"
+        android:inputType="textPassword" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/login_btn"
+        style="@style/buttonTheme"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_size"
+        android:layout_below="@id/et_password"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="5dp"
+        android:text="@string/L" />
+
+</RelativeLayout>
+
+
+

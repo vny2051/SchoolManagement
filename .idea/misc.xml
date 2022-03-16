@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/INTERNSHIP/Internship_Administrator/Main Work/sm_final/SchoolManagement-master_final/app/src/main/res/drawable/side_nav_bar.xml" value="0.1935" />
+        <entry key="..\:/INTERNSHIP/Internship_Administrator/Main Work/sm_final/SchoolManagement-master_final/app/src/main/res/layout/activity_dashboard.xml" value="0.10416666666666667" />
+        <entry key="..\:/INTERNSHIP/Internship_Administrator/Main Work/sm_final/SchoolManagement-master_final/app/src/main/res/layout/activity_login_otp.xml" value="0.225" />
+        <entry key="..\:/INTERNSHIP/Internship_Administrator/Main Work/sm_final/SchoolManagement-master_final/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/INTERNSHIP/Internship_Administrator/Main Work/sm_final/SchoolManagement-master_final/app/src/main/res/layout/activity_splash.xml" value="0.22" />
+        <entry key="..\:/INTERNSHIP/Internship_Administrator/Main Work/sm_final/SchoolManagement-master_final/app/src/main/res/layout/nav_header_side_menu.xml" value="0.25" />
+        <entry key="..\:/INTERNSHIP/Internship_Administrator/Main Work/sm_final/SchoolManagement-master_final/app/src/main/res/menu/side_menu.xml" value="0.33" />
+        <entry key="..\:/Internship/overseas project/app/src/main/res/drawable-anydpi/DigiLab.xml" value="0.2203125" />
+        <entry key="..\:/Internship/overseas project/app/src/main/res/drawable-anydpi/Material.xml" value="0.2203125" />
+        <entry key="..\:/Internship/overseas project/app/src/main/res/drawable-anydpi/assignment.xml" value="0.2203125" />
+        <entry key="..\:/Internship/overseas project/app/src/main/res/drawable-anydpi/dashboard.xml" value="0.2203125" />
+        <entry key="..\:/Internship/overseas project/app/src/main/res/drawable-anydpi/digilab.xml" value="0.1962962962962963" />
+        <entry key="..\:/Internship/overseas project/app/src/main/res/drawable-anydpi/liveclass.xml" value="0.2203125" />
+        <entry key="..\:/Internship/overseas project/app/src/main/res/drawable-anydpi/material.xml" value="0.1962962962962963" />
+        <entry key="..\:/Internship/overseas project/app/src/main/res/drawable-anydpi/menu.xml" value="0.2203125" />
+        <entry key="..\:/Internship/overseas project/app/src/main/res/drawable-anydpi/statistic.xml" value="0.2203125" />
+        <entry key="..\:/Internship/overseas project/app/src/main/res/drawable-v21/ic_menu_slideshow.xml" value="0.2203125" />
+        <entry key="..\:/Internship/overseas project/app/src/main/res/drawable/custom.xml" value="0.2203125" />
+        <entry key="..\:/Internship/overseas project/app/src/main/res/drawable/custom_1.xml" value="0.2203125" />
+        <entry key="..\:/Internship/overseas project/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2203125" />
+        <entry key="..\:/Internship/overseas project/app/src/main/res/drawable/side_nav_bar.xml" value="0.2203125" />
+        <entry key="..\:/Internship/overseas project/app/src/main/res/font/dancing_font.xml" value="0.234375" />
+        <entry key="..\:/Internship/overseas project/app/src/main/res/layout-v21/activity_splash.xml" value="0.18795289855072464" />
+        <entry key="..\:/Internship/overseas project/app/src/main/res/layout/activity_dashboard.xml" value="0.22" />
+        <entry key="..\:/Internship/overseas project/app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="..\:/Internship/overseas project/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Internship/overseas project/app/src/main/res/layout/activity_splash.xml" value="0.16" />
+        <entry key="..\:/Internship/overseas project/app/src/main/res/layout/app_bar_main.xml" value="0.17889492753623187" />
+        <entry key="..\:/Internship/overseas project/app/src/main/res/layout/content_main.xml" value="0.17889492753623187" />
+        <entry key="..\:/Internship/overseas project/app/src/main/res/menu/activity_main_drawer.xml" value="0.33" />
+        <entry key="..\:/Internship/overseas project/app/src/main/res/menu/main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Administrator/Desktop/Internship_Administrator/overseas project/app/src/main/res/drawable-anydpi/menu.xml" value="0.180859375" />
+        <entry key="..\:/Users/Administrator/Desktop/Internship_Administrator/overseas project/app/src/main/res/drawable/custom.xml" value="0.180859375" />
+        <entry key="..\:/Users/Administrator/Desktop/Internship_Administrator/overseas project/app/src/main/res/drawable/custom_1.xml" value="0.180859375" />
+        <entry key="..\:/Users/Administrator/Desktop/Internship_Administrator/overseas project/app/src/main/res/drawable/gradient_bg.xml" value="0.180859375" />
+        <entry key="..\:/Users/Administrator/Desktop/Internship_Administrator/overseas project/app/src/main/res/drawable/ic_baseline_arrow_back_ios_24.xml" value="0.180859375" />
+        <entry key="..\:/Users/Administrator/Desktop/Internship_Administrator/overseas project/app/src/main/res/layout/activity_assignment.xml" value="0.16875" />
+        <entry key="..\:/Users/Administrator/Desktop/Internship_Administrator/overseas project/app/src/main/res/layout/activity_assignments.xml" value="0.15" />
+        <entry key="..\:/Users/Administrator/Desktop/Internship_Administrator/overseas project/app/src/main/res/layout/activity_dashboard.xml" value="0.16" />
+        <entry key="..\:/Users/Administrator/Desktop/Internship_Administrator/overseas project/app/src/main/res/layout/activity_digital_library.xml" value="0.12" />
+        <entry key="..\:/Users/Administrator/Desktop/Internship_Administrator/overseas project/app/src/main/res/layout/activity_liveclasses.xml" value="0.17" />
+        <entry key="..\:/Users/Administrator/Desktop/Internship_Administrator/overseas project/app/src/main/res/layout/activity_login.xml" value="0.2" />
+        <entry key="..\:/Users/Administrator/Desktop/Internship_Administrator/overseas project/app/src/main/res/layout/activity_login1.xml" value="0.18" />
+        <entry key="..\:/Users/Administrator/Desktop/Internship_Administrator/overseas project/app/src/main/res/layout/activity_login2.xml" value="0.2" />
+        <entry key="..\:/Users/Administrator/Desktop/Internship_Administrator/overseas project/app/src/main/res/layout/activity_login_otp.xml" value="0.16875" />
+        <entry key="..\:/Users/Administrator/Desktop/Internship_Administrator/overseas project/app/src/main/res/layout/activity_login_pass.xml" value="0.13333333333333333" />
+        <entry key="..\:/Users/Administrator/Desktop/Internship_Administrator/overseas project/app/src/main/res/layout/activity_login_selection.xml" value="0.16" />
+        <entry key="..\:/Users/Administrator/Desktop/Internship_Administrator/overseas project/app/src/main/res/layout/activity_main.xml" value="0.18" />
+        <entry key="..\:/Users/Administrator/Desktop/Internship_Administrator/overseas project/app/src/main/res/layout/activity_splash.xml" value="0.19" />
+        <entry key="..\:/Users/Administrator/Desktop/Internship_Administrator/overseas project/app/src/main/res/layout/activity_statistics.xml" value="0.16875" />
+        <entry key="..\:/Users/Administrator/Desktop/Internship_Administrator/overseas project/app/src/main/res/layout/activity_study_material.xml" value="0.16875" />
+        <entry key="..\:/Users/Administrator/Desktop/Internship_Administrator/overseas project/app/src/main/res/layout/fragment_assignment.xml" value="0.16875" />
+        <entry key="..\:/Users/Administrator/Desktop/Internship_Administrator/overseas project/app/src/main/res/layout/fragment_assignments.xml" value="0.1" />
+        <entry key="..\:/Users/Administrator/Desktop/Internship_Administrator/overseas project/app/src/main/res/layout/fragment_attendance.xml" value="0.16875" />
+        <entry key="..\:/Users/Administrator/Desktop/Internship_Administrator/overseas project/app/src/main/res/layout/fragment_attendence.xml" value="0.16875" />
+        <entry key="..\:/Users/Administrator/Desktop/Internship_Administrator/overseas project/app/src/main/res/layout/fragment_books.xml" value="0.16875" />
+        <entry key="..\:/Users/Administrator/Desktop/Internship_Administrator/overseas project/app/src/main/res/layout/fragment_digital_library.xml" value="0.1" />
+        <entry key="..\:/Users/Administrator/Desktop/Internship_Administrator/overseas project/app/src/main/res/layout/fragment_live_classes.xml" value="0.14" />
+        <entry key="..\:/Users/Administrator/Desktop/Internship_Administrator/overseas project/app/src/main/res/layout/fragment_news.xml" value="0.16" />
+        <entry key="..\:/Users/Administrator/Desktop/Internship_Administrator/overseas project/app/src/main/res/layout/fragment_notice.xml" value="0.14" />
+        <entry key="..\:/Users/Administrator/Desktop/Internship_Administrator/overseas project/app/src/main/res/layout/fragment_otther_activites.xml" value="0.16875" />
+        <entry key="..\:/Users/Administrator/Desktop/Internship_Administrator/overseas project/app/src/main/res/layout/fragment_result.xml" value="0.16875" />
+        <entry key="..\:/Users/Administrator/Desktop/Internship_Administrator/overseas project/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1195" />
+        <entry key="..\:/Users/Administrator/Desktop/Internship_Administrator/overseas project/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1195" />
+        <entry key="app/src/main/res/layout/activity_assignments.xml" value="0.11577868852459017" />
+        <entry key="app/src/main/res/layout/activity_dashboard.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_digital_library.xml" value="0.18203125" />
+        <entry key="app/src/main/res/layout/activity_liveclasses.xml" value="0.18203125" />
+        <entry key="app/src/main/res/layout/activity_login_otp.xml" value="0.18203125" />
+        <entry key="app/src/main/res/layout/activity_login_pass.xml" value="0.18203125" />
+        <entry key="app/src/main/res/layout/activity_login_selection.xml" value="0.19894561767578123" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1153915405273438" />
+        <entry key="app/src/main/res/layout/activity_side_menu.xml" value="0.18203125" />
+        <entry key="app/src/main/res/layout/activity_splash.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_statistics.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_study_material.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/app_bar_side_menu.xml" value="0.18203125" />
+        <entry key="app/src/main/res/layout/content_side_menu.xml" value="0.18203125" />
+        <entry key="app/src/main/res/layout/fragment_assignments.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_attendance.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_books.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_digital_library.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_live_classes.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_news.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_notice.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_other_activites.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_result.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/nav_header_side_menu.xml" value="0.18203125" />
+        <entry key="app/src/main/res/layout/side_header.xml" value="0.18203125" />
+        <entry key="app/src/main/res/menu/activity_main_drawer.xml" value="0.18203125" />
+        <entry key="app/src/main/res/menu/side_menu.xml" value="0.18203125" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

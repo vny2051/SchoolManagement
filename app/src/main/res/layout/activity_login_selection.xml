@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true">
+
+    <!--    set bg here-->
+
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="100dp"
+
+        android:alpha="1"
+        android:background="@drawable/custom_1"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:gravity="center_horizontal"
+            android:text="@string/choose_login_method"
+            android:textColor="@color/brown_type"
+            android:textSize="33sp"
+            android:textStyle="bold"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_login_method1"
+            style="@style/buttonTheme"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn_size"
+
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+
+            android:text="login with user name and password" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_login_method2"
+            style="@style/buttonTheme"
+
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn_size"
+
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:text="login with Otp" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
