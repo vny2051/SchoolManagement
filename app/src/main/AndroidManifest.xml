@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?><manifest xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
 package="GradeApp">
 
 <application
@@ -29,8 +30,24 @@ package="GradeApp">
         android:name="com.overseastechnologies.GradeApp.activities.LoginActivityOtp"
         android:label="LoginActivity" />
     <activity
-        android:name="com.overseastechnologies.GradeApp.activities.MainActivity"
+        android:name="com.overseastechnologies.GradeApp.MainActivity"
         android:label="MainActivity" />
+<!--    navigation drawer activity-->
+    <activity
+        android:name="com.overseastechnologies.GradeApp.activities.ProfileActivity"
+        android:exported="false" />
+    <activity
+        android:name="com.overseastechnologies.GradeApp.activities.FeeStatusActivity"
+        android:exported="false" />
+    <activity
+        android:name="com.overseastechnologies.GradeApp.activities.AboutActivity"
+        android:exported="false" />
+    <activity
+        android:name="com.overseastechnologies.GradeApp.activities.FeedbackActivity"
+        android:exported="false" />
+    <activity
+        android:name="com.overseastechnologies.GradeApp.activities.ContactActivity"
+        android:exported="false" />
     <!--        Inside Main Activities-->
     <activity
         android:name="com.overseastechnologies.GradeApp.activities.DashboardActivity"

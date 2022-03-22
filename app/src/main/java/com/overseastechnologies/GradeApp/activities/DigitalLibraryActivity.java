@@ -5,10 +5,10 @@ import android.os.Bundle;
 import android.view.View;
 
 
-import androidx.core.view.GravityCompat;
 import androidx.viewpager.widget.ViewPager;
 
 import com.google.android.material.tabs.TabLayout;
+import com.overseastechnologies.GradeApp.MainActivity;
 import com.overseastechnologies.GradeApp.ui.Digitallibrary.SectionsPagerAdapter;
 
 import GradeApp.databinding.ActivityDigitalLibraryBinding;

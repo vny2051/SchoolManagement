@@ -7,6 +7,7 @@ import android.view.View;
 import androidx.viewpager.widget.ViewPager;
 
 import com.google.android.material.tabs.TabLayout;
+import com.overseastechnologies.GradeApp.MainActivity;
 import com.overseastechnologies.GradeApp.ui.Studymaterial.SectionsPagerAdapter;
 
 import GradeApp.databinding.ActivityStudyMaterialBinding;

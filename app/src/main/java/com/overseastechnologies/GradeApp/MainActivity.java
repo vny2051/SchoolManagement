@@ -1,6 +1,5 @@
-package com.overseastechnologies.GradeApp.activities;
+package com.overseastechnologies.GradeApp;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -13,6 +12,17 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.GravityCompat;
 
 import com.google.android.material.navigation.NavigationView;
+import com.overseastechnologies.GradeApp.activities.AboutActivity;
+import com.overseastechnologies.GradeApp.activities.AssignmentsActivity;
+import com.overseastechnologies.GradeApp.activities.ContactActivity;
+import com.overseastechnologies.GradeApp.activities.DashboardActivity;
+import com.overseastechnologies.GradeApp.activities.DigitalLibraryActivity;
+import com.overseastechnologies.GradeApp.activities.FeeStatusActivity;
+import com.overseastechnologies.GradeApp.activities.FeedbackActivity;
+import com.overseastechnologies.GradeApp.activities.LiveClassesActivity;
+import com.overseastechnologies.GradeApp.activities.ProfileActivity;
+import com.overseastechnologies.GradeApp.activities.StatisticsActivity;
+import com.overseastechnologies.GradeApp.activities.StudyMaterialActivity;
 
 import GradeApp.R;
 import GradeApp.databinding.ActivityMainBinding;
@@ -47,11 +57,7 @@ public class MainActivity extends AppCompatActivity {
 
                 switch (menuitem.getItemId()) {
                     case R.id.home_menu:
-                        if (getApplicationContext() == MainActivity.this) {
-                            Toast.makeText(getApplicationContext(), "Home pannel is open", Toast.LENGTH_LONG).show();
-                        } else {
-                            startActivity(new Intent(getApplicationContext(), MainActivity.class));
-                        }
+                        Toast.makeText(MainActivity.this, "You're already in Home", Toast.LENGTH_SHORT).show();
                         binding.drawerLayout.closeDrawer(GravityCompat.START);
                         break;
 
@@ -66,19 +72,19 @@ public class MainActivity extends AppCompatActivity {
                         break;
 
                     case R.id.profile_menu:
-                        startActivity(new Intent(MainActivity.this, ProfileMenuActivity.class));
+                        startActivity(new Intent(MainActivity.this, ProfileActivity.class));
                         Toast.makeText(getApplicationContext(), "Profile pannel is open", Toast.LENGTH_LONG).show();
                         binding.drawerLayout.closeDrawer(GravityCompat.START);
                         break;
 
                     case R.id.contact_menu:
-                        startActivity(new Intent(MainActivity.this, ContactMenuActivity.class));
+                        startActivity(new Intent(MainActivity.this, ContactActivity.class));
                         Toast.makeText(getApplicationContext(), "Contact pannel is open", Toast.LENGTH_LONG).show();
                         binding.drawerLayout.closeDrawer(GravityCompat.START);
                         break;
 
                     case R.id.feedback_menu:
-                        startActivity(new Intent(MainActivity.this, Activity.class));
+                        startActivity(new Intent(MainActivity.this, FeedbackActivity.class));
                         Toast.makeText(getApplicationContext(), "Feedback pannel is open", Toast.LENGTH_LONG).show();
                         binding.drawerLayout.closeDrawer(GravityCompat.START);
                         break;
@@ -87,7 +93,7 @@ public class MainActivity extends AppCompatActivity {
                 }
 
                 binding.drawerLayout.closeDrawer(GravityCompat.START);
-                return true;
+                return false;
             }
         });
 
@@ -102,14 +108,14 @@ public class MainActivity extends AppCompatActivity {
         binding.cvStatistics.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this,StatisticsActivity.class));
+                startActivity(new Intent(MainActivity.this, StatisticsActivity.class));
                 finish();
             }
         });
         binding.cvLiveClasses.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this,LiveClassesActivity.class));
+                startActivity(new Intent(MainActivity.this, LiveClassesActivity.class));
                 finish();
             }
         });
@@ -123,14 +129,14 @@ public class MainActivity extends AppCompatActivity {
         binding.cvDigitalLibrary.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this,DigitalLibraryActivity.class));
+                startActivity(new Intent(MainActivity.this, DigitalLibraryActivity.class));
                 finish();
             }
         });
         binding.cvStudyMaterial.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this,StudyMaterialActivity.class));
+                startActivity(new Intent(MainActivity.this, StudyMaterialActivity.class));
                 finish();
             }
         });

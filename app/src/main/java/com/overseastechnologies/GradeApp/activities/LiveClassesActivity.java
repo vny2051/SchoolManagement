@@ -7,11 +7,12 @@ import android.os.Bundle;
 import androidx.viewpager.widget.ViewPager;
 
 import com.google.android.material.tabs.TabLayout;
+import com.overseastechnologies.GradeApp.MainActivity;
 import com.overseastechnologies.GradeApp.ui.Liveclasses.SectionsPagerAdapter;
 
 import GradeApp.databinding.ActivityLiveclassesBinding;
 
-public class LiveClassesActivity extends MainActivity{
+public class LiveClassesActivity extends MainActivity {
 
     ActivityLiveclassesBinding binding;
 

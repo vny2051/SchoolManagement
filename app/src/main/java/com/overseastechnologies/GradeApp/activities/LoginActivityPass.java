@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.overseastechnologies.GradeApp.MainActivity;
+
 import GradeApp.databinding.ActivityLoginPassBinding;
 
 public class LoginActivityPass extends AppCompatActivity {
