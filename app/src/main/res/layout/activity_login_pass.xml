@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
 
     android:layout_width="match_parent"
@@ -18,22 +19,24 @@
         android:src="@drawable/logo_app" />
 
     <EditText
-        android:id="@+id/et_user_name"
+        android:id="@+id/et_user_email_id"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_below="@id/img1"
         android:layout_marginTop="15dp"
-        android:hint="Enter Your Username Here"
-        android:inputType="phone" />
+        android:autofillHints=""
+        android:hint="Enter Your Mobile Email-id Here"
+        android:inputType="textEmailAddress" />
 
     <EditText
         android:id="@+id/et_password"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_below="@id/et_user_name"
+        android:layout_below="@id/et_user_email_id"
         android:layout_marginTop="-2dp"
         android:hint="Enter Your Password Here"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        android:autofillHints="" />
 
 
     <com.google.android.material.button.MaterialButton
