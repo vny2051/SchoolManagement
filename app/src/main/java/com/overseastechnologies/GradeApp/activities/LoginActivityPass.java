@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
@@ -27,7 +28,7 @@ public class LoginActivityPass extends AppCompatActivity {
 
     ActivityLoginPassBinding binding;
     DBHelper DB;
-    String apiUrl = "http://localhost/Admin_panel/api/LoginApi/";
+    String apiUrl = "http://192.168.0.114/api/loginApi.php";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,19 +49,11 @@ public class LoginActivityPass extends AppCompatActivity {
                     Toast.makeText(LoginActivityPass.this, "empty", Toast.LENGTH_SHORT).show();
                 }
                 else {
-//                    Boolean check = DB.checkUserNamePassword(username, password);
-//                    if(check == true){
-//                        Toast.makeText(LoginActivityPass.this, "Sign in Successfully", Toast.LENGTH_SHORT).show();
-//                        startActivity(new Intent(LoginActivityPass.this, MainActivity.class));
-//                    }else{
-//                        Toast.makeText(LoginActivityPass.this, "Invalid credentials", Toast.LENGTH_SHORT).show();
-//                    }
-
                     StringRequest stringRequest = new StringRequest(Request.Method.POST, apiUrl, new Response.Listener<String>() {
                         @Override
                         public void onResponse(String response) {
                             if (response.equals("user exist")) {
-                                Toast.makeText(LoginActivityPass.this, response, Toast.LENGTH_SHORT).show();
+                                Toast.makeText(LoginActivityPass.this, "Login Successful"+response, Toast.LENGTH_SHORT).show();
                                 startActivity(new Intent(getApplicationContext(), MainActivity.class));
                             } else {
                                 Toast.makeText(LoginActivityPass.this, response, Toast.LENGTH_SHORT).show();
@@ -69,7 +62,8 @@ public class LoginActivityPass extends AppCompatActivity {
                     }, new Response.ErrorListener() {
                         @Override
                         public void onErrorResponse(VolleyError error) {
-                            Toast.makeText(LoginActivityPass.this, error.toString(), Toast.LENGTH_SHORT).show();
+                            Toast.makeText(LoginActivityPass.this, "error................"+error.toString(), Toast.LENGTH_SHORT).show();
+                            Log.e("vny",error.toString());
                         }
                     }) {
                         @Nullable
@@ -82,7 +76,7 @@ public class LoginActivityPass extends AppCompatActivity {
                         }
                     };
 
-                    RequestQueue queue = Volley.newRequestQueue(getApplicationContext());
+                    RequestQueue queue = Volley.newRequestQueue(LoginActivityPass.this);
                     queue.add(stringRequest);
 
                 }
