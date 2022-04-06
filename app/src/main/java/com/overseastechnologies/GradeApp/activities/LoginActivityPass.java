@@ -151,7 +151,7 @@ public class LoginActivityPass extends AppCompatActivity {
 
             @Override
             public void onFailure(Call<List<responseModel>> call, Throwable t) {
-                Toast.makeText(LoginActivityPass.this, "Error.. : " + t.toString(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(LoginActivityPass.this, "Error... : " + t.toString(), Toast.LENGTH_SHORT).show();
             }
         });
     }
