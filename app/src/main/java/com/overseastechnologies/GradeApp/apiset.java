@@ -8,9 +8,7 @@ import retrofit2.Call;
 
 public interface apiset {
 
-    @GET("login")
+    @GET("loginApi1")
     Call<List<responseModel>> getdata();
-
-    @Body()
 
 }
