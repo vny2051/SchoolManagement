@@ -47,6 +47,7 @@ public class LoginActivityPass extends AppCompatActivity {
                 String email = binding.etUserEmailId.getText().toString();
                 String password = binding.etPassword.getText().toString();
 
+
                 if (email.isEmpty() || password.isEmpty()) {
                     Toast.makeText(LoginActivityPass.this, "empty", Toast.LENGTH_SHORT).show();
                 } else {
@@ -66,8 +67,8 @@ public class LoginActivityPass extends AppCompatActivity {
                     }) {
                         @Override
                         public Map<String, String> getHeaders() throws AuthFailureError {
-                            Map<String,String> header = new HashMap<String,String>();
-                            header.put("Developerkey"," schlMana20Ge22");
+                            Map<String, String> header = new HashMap<String, String>();
+                            header.put("Developerkey", " schlMana20Ge22");
 
                             return header;
                         }
@@ -105,13 +106,25 @@ public class LoginActivityPass extends AppCompatActivity {
                         public void onResponse(JSONObject response) {
                             try {
                                 JSONObject data = response.getJSONObject("data");
-                                Toast.makeText(LoginActivityPass.this,data.getString("studentID"), Toast.LENGTH_SHORT).show();
-                                Toast.makeText(LoginActivityPass.this,data.getString("firstName"), Toast.LENGTH_SHORT).show();
-                                Toast.makeText(LoginActivityPass.this,data.getString("lastName"), Toast.LENGTH_SHORT).show();
-                                Toast.makeText(LoginActivityPass.this,data.getString("dateCreated"), Toast.LENGTH_SHORT).show();
+                                String studentId = data.getString("studentID");
+                                String firstName = data.getString("firstName");
+                                String lastName = data.getString("lastName");
+
+                                Toast.makeText(LoginActivityPass.this, "poyra ni id : "+ studentId + "\n poyra nu first-name : "+ firstName+ "\n poyra nu last name : " + lastName +"\n\n NAVA Poyra Avla se....", Toast.LENGTH_SHORT).show();
+
+                                //Toast.makeText(LoginActivityPass.this, response.getJSONObject("data").getString("studentID"), Toast.LENGTH_SHORT).show();
                             } catch (JSONException e) {
                                 e.printStackTrace();
                             }
+//                            try {
+//                                JSONObject data = response.getJSONObject("data");
+//                                Toast.makeText(LoginActivityPass.this,data.getString("studentID = "), Toast.LENGTH_SHORT).show();
+//                                Toast.makeText(LoginActivityPass.this,data.getString("firstName = "), Toast.LENGTH_SHORT).show();
+//                                Toast.makeText(LoginActivityPass.this,data.getString("lastName = "), Toast.LENGTH_SHORT).show();
+//                                Toast.makeText(LoginActivityPass.this,data.getString("dateCreated = "), Toast.LENGTH_SHORT).show();
+//                            } catch (JSONException e) {
+//                                e.printStackTrace();
+//                            }
                         }
                     }, new Response.ErrorListener() {
                         @Override
@@ -121,44 +134,28 @@ public class LoginActivityPass extends AppCompatActivity {
                     }) {
                         @Override
                         public Map<String, String> getHeaders() throws AuthFailureError {
-                            Map<String,String> header = new HashMap<String,String>();
-                            header.put("Developerkey"," schlMana20Ge22");
+                            Map<String, String> header = new HashMap<String, String>();
+                            header.put("Developerkey", " schlMana20Ge22");
 
                             return header;
                         }
 
-                        //                        @Nullable
-//                        @Override
-//                        public Map<String, String> getParams() throws AuthFailureError {
-//                            Map<String,String> header = new HashMap<String,String>();
-//                            header.put("emailID","jagrutipatel@gmail.com");
-//                            header.put("password","123");
-//
-//                            return header;
-//                        }
-//
-//                        @Nullable
-//                        @Override
-//                        protected Map<String, String> getPostParams() throws AuthFailureError {
-//                            Map<String,String> header = new HashMap<String,String>();
-//                            header.put("emailID","jagrutipatel@gmail.com");
-//                            header.put("password","123");
-//
-//                            return header;
-//                        }
                         @Override
                         public byte[] getBody() {
-                            String str = "{\"emailID\":\"" + email + "\",\"password\":\"" + password + "\"}";
-                            return str.getBytes();
 
-//
-//                            try {
-//
-//                                jsonObject.put("emailId", email);
-//                                jsonObject.put("password", password);
-//                            } catch (JSONException e) {
-//                                e.printStackTrace();
-//                            }
+                            //another way of sending body raw data...
+//                            String str = "{\"emailID\":\"" + email + "\",\"password\":\"" + password + "\"}";
+//                            return str.getBytes();
+
+                            JSONObject bodyParameters = new JSONObject();
+                            try {
+                                bodyParameters.put("emailID", email);
+                                bodyParameters.put("password", password);
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
+
+                            return bodyParameters.toString().getBytes();
 
                         }
                     };
