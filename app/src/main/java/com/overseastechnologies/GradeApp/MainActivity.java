@@ -28,7 +28,7 @@ import GradeApp.R;
 import GradeApp.databinding.ActivityMainBinding;
 
 
-public class MainActivity extends AppCompatActivity {
+public class  MainActivity extends AppCompatActivity {
     ActivityMainBinding binding;
     ActionBarDrawerToggle toggle;
 

@@ -1,81 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    package="GradeApp">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+package="GradeApp">
 
-    <!--    permissions-->
-    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
-    <application
-        android:usesCleartextTraffic="true"
-        android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+<application
+    android:allowBackup="true"
+    android:icon="@mipmap/ic_launcher"
+    android:label="@string/app_name"
+    android:roundIcon="@mipmap/ic_launcher_round"
+    android:supportsRtl="true"
+    android:theme="@style/Theme.SchoolManagement"
+    android:usesCleartextTraffic="true">
+    <activity
+        android:name="com.overseastechnologies.GradeApp.activities.LoginActivityPass"
+        android:exported="false" />
+    <activity
+        android:name="com.overseastechnologies.GradeApp.activities.LoginSelectionActivity"
+        android:exported="false" />
+    <activity
+        android:name="com.overseastechnologies.GradeApp.activities.SplashActivity"
+        android:exported="true"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
-        android:supportsRtl="true"
-        android:theme="@style/Theme.SchoolManagement"
-        tools:targetApi="m">
-        <activity
-            android:name="com.overseastechnologies.GradeApp.activities.LoginActivityPass"
-            android:exported="false" />
-        <activity
-            android:name="com.overseastechnologies.GradeApp.activities.LoginSelectionActivity"
-            android:exported="false" />
-        <activity
-            android:name="com.overseastechnologies.GradeApp.activities.SplashActivity"
-            android:exported="true"
-            android:label="@string/app_name"
-            android:theme="@style/Theme.SchoolManagement.NoActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        android:theme="@style/Theme.SchoolManagement.NoActionBar">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name="com.overseastechnologies.GradeApp.activities.LoginActivityOtp"
-            android:label="LoginActivity" />
-        <activity
-            android:name="com.overseastechnologies.GradeApp.MainActivity"
-            android:label="MainActivity" />
-        <!--    navigation drawer activity-->
-        <activity
-            android:name="com.overseastechnologies.GradeApp.activities.ProfileActivity"
-            android:exported="false" />
-        <activity
-            android:name="com.overseastechnologies.GradeApp.activities.FeeStatusActivity"
-            android:exported="false" />
-        <activity
-            android:name="com.overseastechnologies.GradeApp.activities.AboutActivity"
-            android:exported="false" />
-        <activity
-            android:name="com.overseastechnologies.GradeApp.activities.FeedbackActivity"
-            android:exported="false" />
-        <activity
-            android:name="com.overseastechnologies.GradeApp.activities.ContactActivity"
-            android:exported="false" />
-        <!--        Inside Main Activities-->
-        <activity
-            android:name="com.overseastechnologies.GradeApp.activities.DashboardActivity"
-            android:label="DashboardActivity" />
-        <activity
-            android:name="com.overseastechnologies.GradeApp.activities.StatisticsActivity"
-            android:label="StatisticsActivity" />
-        <activity
-            android:name="com.overseastechnologies.GradeApp.activities.LiveClassesActivity"
-            android:label="LiveClassesActivity" />
-        <activity
-            android:name="com.overseastechnologies.GradeApp.activities.AssignmentsActivity"
-            android:label="AssignmentActivity" />
-        <activity
-            android:name="com.overseastechnologies.GradeApp.activities.DigitalLibraryActivity"
-            android:label="DigitalLibraryActivity" />
-        <activity
-            android:name="com.overseastechnologies.GradeApp.activities.StudyMaterialActivity"
-            android:label="StudyMaterialActivity" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+    <activity
+        android:name="com.overseastechnologies.GradeApp.activities.LoginActivityOtp"
+        android:label="LoginActivity" />
+    <activity
+        android:name="com.overseastechnologies.GradeApp.MainActivity"
+        android:label="MainActivity" />
+<!--    navigation drawer activity-->
+    <activity
+        android:name="com.overseastechnologies.GradeApp.activities.ProfileActivity"
+        android:exported="false" />
+    <activity
+        android:name="com.overseastechnologies.GradeApp.activities.FeeStatusActivity"
+        android:exported="false" />
+    <activity
+        android:name="com.overseastechnologies.GradeApp.activities.AboutActivity"
+        android:exported="false" />
+    <activity
+        android:name="com.overseastechnologies.GradeApp.activities.FeedbackActivity"
+        android:exported="false" />
+    <activity
+        android:name="com.overseastechnologies.GradeApp.activities.ContactActivity"
+        android:exported="false" />
+    <!--        Inside Main Activities-->
+    <activity
+        android:name="com.overseastechnologies.GradeApp.activities.DashboardActivity"
+        android:label="DashboardActivity" />
+    <activity
+        android:name="com.overseastechnologies.GradeApp.activities.StatisticsActivity"
+        android:label="StatisticsActivity" />
+    <activity
+        android:name="com.overseastechnologies.GradeApp.activities.LiveClassesActivity"
+        android:label="LiveClassesActivity" />
+    <activity
+        android:name="com.overseastechnologies.GradeApp.activities.AssignmentsActivity"
+        android:label="AssignmentActivity" />
+    <activity
+        android:name="com.overseastechnologies.GradeApp.activities.DigitalLibraryActivity"
+        android:label="DigitalLibraryActivity" />
+    <activity
+        android:name="com.overseastechnologies.GradeApp.activities.StudyMaterialActivity"
+        android:label="StudyMaterialActivity" />
 
-    </application>
+</application>
 
 </manifest>

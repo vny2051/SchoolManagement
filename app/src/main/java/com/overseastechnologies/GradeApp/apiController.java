@@ -5,7 +5,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class apiController {
 
-    private static final String url = "http://192.168.43.53/api/loginApi1.php";
+    private static final String url = "http://schoolmanagement.jihsuyaainfotech.in/api/student/login/";
     private static apiController clientobject;
     private static Retrofit retrofit;
 
@@ -23,7 +23,7 @@ public class apiController {
         return clientobject;
     }
 
-    public apiset getapi(){
+     public apiset getapi(){
         return retrofit.create(apiset.class);
     }
 }

@@ -48,7 +48,7 @@
         app:civ_border_color="#FF000000"
         app:civ_border_width="2dp" />
 
-    <TextView
+    <EditText
         android:id="@+id/Name_profile"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -60,7 +60,7 @@
         android:textColor="@color/black"
         android:textSize="20dp" />
 
-    <TextView
+    <EditText
         android:id="@+id/Mobile_profile"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -72,7 +72,7 @@
         android:textColor="@color/black"
         android:textSize="20dp" />
 
-    <TextView
+    <EditText
         android:id="@+id/Email_profile"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -96,5 +96,15 @@
         android:textColor="@color/black"
         android:textSize="20dp" />
 
+    <EditText
+        android:id="@+id/Id_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="485dp"
+        android:layout_marginBottom="201dp"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
 
 </RelativeLayout>
