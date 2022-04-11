@@ -1,33 +1,25 @@
 package com.overseastechnologies.GradeApp.activities;
 
-import com.android.volley.Response;
-import com.android.volley.toolbox.JsonObjectRequest;
-
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
+import com.android.volley.Response;
 import com.android.volley.VolleyError;
-import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.io.UnsupportedEncodingException;
 import java.util.HashMap;
 import java.util.Map;
-
-import com.android.volley.AuthFailureError;
-import com.google.gson.Gson;
-import com.overseastechnologies.GradeApp.MainActivity;
 
 import GradeApp.databinding.ActivityLoginPassBinding;
 
@@ -108,17 +100,35 @@ public class LoginActivityPass extends AppCompatActivity {
                         public void onResponse(JSONObject response) {
                             try {
 
+
                                 if (response.getString("status").equals("true")) {
 
                                     JSONObject data = response.getJSONObject("data");
+
+
+
+
+
                                     String studentId = data.getString("studentID");
                                     String firstName = data.getString("firstName");
                                     String lastName = data.getString("lastName");
 
-                                    Toast.makeText(LoginActivityPass.this, "poyra ni id. : " + studentId + "\n poyra nu first-name : " + firstName + "\n poyra nu last name : " + lastName + "\n\n NAVA Poyra Avla se....", Toast.LENGTH_SHORT).show();
 
-                                    startActivity(new Intent(LoginActivityPass.this, MainActivity.class));
+                                    Toast.makeText(LoginActivityPass.this, "poyra ni id : " + studentId + "\n poyra nu first-name : " + firstName + "\n poyra nu last name : " + lastName + "\n\n NAVA Poyra Avla se....", Toast.LENGTH_SHORT).show();
+
+                                    Intent intent= new Intent(LoginActivityPass.this, ProfileActivity.class);
+                                    intent.putExtra("studentID",studentId);
+                                    intent.putExtra("firstName",firstName);
+                                    intent.putExtra("lastName",lastName);
+                                    startActivity(intent);
                                     finish();
+//
+//                                    startActivity(new Intent(LoginActivityPass.this, MainActivity.class));
+
+                                }
+                                else {
+
+
                                 }
                             } catch (JSONException e) {
                                 e.printStackTrace();
