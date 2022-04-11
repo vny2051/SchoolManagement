@@ -115,7 +115,7 @@ public class LoginActivityPass extends AppCompatActivity {
                                     String firstName = data.getString("firstName");
                                     String lastName = data.getString("lastName");
 
-                                    Toast.makeText(LoginActivityPass.this, "poyra ni id : " + studentId + "\n poyra nu first-name : " + firstName + "\n poyra nu last name : " + lastName + "\n\n NAVA Poyra Avla se....", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(LoginActivityPass.this, "poyra ni id. : " + studentId + "\n poyra nu first-name : " + firstName + "\n poyra nu last name : " + lastName + "\n\n NAVA Poyra Avla se....", Toast.LENGTH_SHORT).show();
 
                                     startActivity(new Intent(LoginActivityPass.this, MainActivity.class));
                                     finish();
