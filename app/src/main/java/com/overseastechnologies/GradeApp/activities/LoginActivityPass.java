@@ -6,6 +6,7 @@ import com.android.volley.toolbox.JsonObjectRequest;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
@@ -26,6 +27,7 @@ import java.util.Map;
 
 import com.android.volley.AuthFailureError;
 import com.google.gson.Gson;
+import com.overseastechnologies.GradeApp.MainActivity;
 
 import GradeApp.databinding.ActivityLoginPassBinding;
 
@@ -52,79 +54,76 @@ public class LoginActivityPass extends AppCompatActivity {
                     Toast.makeText(LoginActivityPass.this, "empty", Toast.LENGTH_SHORT).show();
                 } else {
 
-                    StringRequest stringRequest = new StringRequest(Request.Method.POST, apiUrl, new Response.Listener<String>() {
-                        @Override
-                        public void onResponse(String response) {
-
-                            Toast.makeText(LoginActivityPass.this, response, Toast.LENGTH_SHORT).show();
-
-                        }
-                    }, new Response.ErrorListener() {
-                        @Override
-                        public void onErrorResponse(VolleyError error) {
-                            Toast.makeText(LoginActivityPass.this, "part of success...." + error.toString(), Toast.LENGTH_SHORT).show();
-                        }
-                    }) {
-                        @Override
-                        public Map<String, String> getHeaders() throws AuthFailureError {
-                            Map<String, String> header = new HashMap<String, String>();
-                            header.put("Developerkey", " schlMana20Ge22");
-
-                            return header;
-                        }
-
-                        //                        @Nullable
+//                    StringRequest stringRequest = new StringRequest(Request.Method.POST, apiUrl, new Response.Listener<String>() {
 //                        @Override
-//                        public Map<String, String> getParams() throws AuthFailureError {
-//                            Map<String,String> header = new HashMap<String,String>();
-//                            header.put("emailID","jagrutipatel@gmail.com");
-//                            header.put("password","123");
+//                        public void onResponse(String response) {
+//
+//                            Toast.makeText(LoginActivityPass.this, response, Toast.LENGTH_SHORT).show();
+//
+//                        }
+//                    }, new Response.ErrorListener() {
+//                        @Override
+//                        public void onErrorResponse(VolleyError error) {
+//                            Toast.makeText(LoginActivityPass.this, "part of success...." + error.toString(), Toast.LENGTH_SHORT).show();
+//                        }
+//                    }) {
+//                        @Override
+//                        public Map<String, String> getHeaders() throws AuthFailureError {
+//                            Map<String, String> header = new HashMap<String, String>();
+//                            header.put("Developerkey", " schlMana20Ge22");
 //
 //                            return header;
 //                        }
 //
-//                        @Nullable
+//                        //                        @Nullable
+////                        @Override
+////                        public Map<String, String> getParams() throws AuthFailureError {
+////                            Map<String,String> header = new HashMap<String,String>();
+////                            header.put("emailID","jagrutipatel@gmail.com");
+////                            header.put("password","123");
+////
+////                            return header;
+////                        }
+////
+////                        @Nullable
+////                        @Override
+////                        protected Map<String, String> getPostParams() throws AuthFailureError {
+////                            Map<String,String> header = new HashMap<String,String>();
+////                            header.put("emailID","jagrutipatel@gmail.com");
+////                            header.put("password","123");
+////
+////                            return header;
+////                        }
 //                        @Override
-//                        protected Map<String, String> getPostParams() throws AuthFailureError {
-//                            Map<String,String> header = new HashMap<String,String>();
-//                            header.put("emailID","jagrutipatel@gmail.com");
-//                            header.put("password","123");
-//
-//                            return header;
+//                        public byte[] getBody() {
+//                            String str = "{\"emailID\":\"" + email + "\",\"password\":\"" + password + "\"}";
+//                            return str.getBytes();
 //                        }
-                        @Override
-                        public byte[] getBody() {
-                            String str = "{\"emailID\":\"" + email + "\",\"password\":\"" + password + "\"}";
-                            return str.getBytes();
-                        }
-
-                    };
+//
+//                    };
 
                     //jsonObject Request
                     JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.POST, apiUrl, null, new Response.Listener<JSONObject>() {
                         @Override
                         public void onResponse(JSONObject response) {
                             try {
-                                JSONObject data = response.getJSONObject("data");
-                                String studentId = data.getString("studentID");
-                                String firstName = data.getString("firstName");
-                                String lastName = data.getString("lastName");
 
-                                Toast.makeText(LoginActivityPass.this, "poyra ni id : "+ studentId + "\n poyra nu first-name : "+ firstName+ "\n poyra nu last name : " + lastName +"\n\n NAVA Poyra Avla se....", Toast.LENGTH_SHORT).show();
+                                if (response.getString("status").equals("true")) {
 
-                                //Toast.makeText(LoginActivityPass.this, response.getJSONObject("data").getString("studentID"), Toast.LENGTH_SHORT).show();
+                                    JSONObject data = response.getJSONObject("data");
+                                    String studentId = data.getString("studentID");
+                                    String firstName = data.getString("firstName");
+                                    String lastName = data.getString("lastName");
+
+                                    Toast.makeText(LoginActivityPass.this, "poyra ni id : " + studentId + "\n poyra nu first-name : " + firstName + "\n poyra nu last name : " + lastName + "\n\n NAVA Poyra Avla se....", Toast.LENGTH_SHORT).show();
+
+                                    startActivity(new Intent(LoginActivityPass.this, MainActivity.class));
+                                    finish();
+                                }
                             } catch (JSONException e) {
                                 e.printStackTrace();
                             }
-//                            try {
-//                                JSONObject data = response.getJSONObject("data");
-//                                Toast.makeText(LoginActivityPass.this,data.getString("studentID = "), Toast.LENGTH_SHORT).show();
-//                                Toast.makeText(LoginActivityPass.this,data.getString("firstName = "), Toast.LENGTH_SHORT).show();
-//                                Toast.makeText(LoginActivityPass.this,data.getString("lastName = "), Toast.LENGTH_SHORT).show();
-//                                Toast.makeText(LoginActivityPass.this,data.getString("dateCreated = "), Toast.LENGTH_SHORT).show();
-//                            } catch (JSONException e) {
-//                                e.printStackTrace();
-//                            }
+
                         }
                     }, new Response.ErrorListener() {
                         @Override
