@@ -1,6 +1,7 @@
 package com.overseastechnologies.GradeApp.activities;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
@@ -14,6 +15,8 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
+import com.overseastechnologies.GradeApp.MainActivity;
+import com.overseastechnologies.GradeApp.StudentDetails;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -27,6 +30,7 @@ public class LoginActivityPass extends AppCompatActivity {
 
     ActivityLoginPassBinding binding;
     String apiUrl = "http://schoolmanagement.jihsuyaainfotech.in/api/student/login";
+    
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -106,28 +110,23 @@ public class LoginActivityPass extends AppCompatActivity {
                                     JSONObject data = response.getJSONObject("data");
 
 
-
-
-
                                     String studentId = data.getString("studentID");
                                     String firstName = data.getString("firstName");
                                     String lastName = data.getString("lastName");
 
+                                    SharedPreferences sharedPreferences = getSharedPreferences("StudentInfo", MODE_PRIVATE);
+                                    SharedPreferences.Editor editor = sharedPreferences.edit();
+                                    editor.putString("studentId",studentId);
+                                    editor.putString("firstName",firstName);
+                                    editor.putString("lastName",lastName);
+                                    editor.apply();
 
                                     Toast.makeText(LoginActivityPass.this, "poyra ni id : " + studentId + "\n poyra nu first-name : " + firstName + "\n poyra nu last name : " + lastName + "\n\n NAVA Poyra Avla se....", Toast.LENGTH_SHORT).show();
 
-                                    Intent intent= new Intent(LoginActivityPass.this, ProfileActivity.class);
-                                    intent.putExtra("studentID",studentId);
-                                    intent.putExtra("firstName",firstName);
-                                    intent.putExtra("lastName",lastName);
-                                    startActivity(intent);
-                                    finish();
-//
-//                                    startActivity(new Intent(LoginActivityPass.this, MainActivity.class));
+                                    startActivity(new Intent(LoginActivityPass.this, MainActivity.class));
 
-                                }
-                                else {
-
+                                } else {
+                                    Toast.makeText(LoginActivityPass.this, "Email id or password is wrong", Toast.LENGTH_SHORT).show();
 
                                 }
                             } catch (JSONException e) {

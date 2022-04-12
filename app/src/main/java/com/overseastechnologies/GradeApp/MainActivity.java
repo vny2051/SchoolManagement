@@ -24,6 +24,9 @@ import com.overseastechnologies.GradeApp.activities.ProfileActivity;
 import com.overseastechnologies.GradeApp.activities.StatisticsActivity;
 import com.overseastechnologies.GradeApp.activities.StudyMaterialActivity;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import GradeApp.R;
 import GradeApp.databinding.ActivityMainBinding;
 
