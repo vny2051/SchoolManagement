@@ -30,7 +30,7 @@ public class LoginActivityPass extends AppCompatActivity {
 
     ActivityLoginPassBinding binding;
     String apiUrl = "http://schoolmanagement.jihsuyaainfotech.in/api/student/login";
-
+    
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -107,33 +107,22 @@ public class LoginActivityPass extends AppCompatActivity {
 
                                 if (response.getString("status").equals("true")) {
 
-
-                                    Toast.makeText(LoginActivityPass.this, "Login Successfully", Toast.LENGTH_SHORT).show();
                                     JSONObject data = response.getJSONObject("data");
 
 
+                                    String studentId = data.getString("studentID");
+                                    String firstName = data.getString("firstName");
+                                    String lastName = data.getString("lastName");
+
                                     SharedPreferences sharedPreferences = getSharedPreferences("StudentInfo", MODE_PRIVATE);
                                     SharedPreferences.Editor editor = sharedPreferences.edit();
-                                    editor.putString("studentId", data.getString("studentID"));
-                                    editor.putString("firstName", data.getString("firstName"));
-                                    editor.putString("lastName", data.getString("lastName"));
-                                    editor.putString("emailId", data.getString("emailID"));
-                                    editor.putString("mobileNo", data.getString("mobileNo"));
-                                    editor.putString("gender", data.getString("gender"));
-                                    editor.putString("birthDate", data.getString("birthDate"));
-                                    editor.putString("class", data.getString("class"));
-                                    editor.putString("rollNo", data.getString("rollNo"));
-                                    editor.putString("fatherName", data.getString("fatherName"));
-                                    editor.putString("motherName", data.getString("motherName"));
-                                    editor.putString("parentsEmail", data.getString("parentsEmail"));
-                                    editor.putString("parentsMobile", data.getString("parentsMobile"));
-                                    editor.putString("address", data.getString("address"));
-                                    editor.putString("registrationDate", data.getString("registrationDate"));
-
+                                    editor.putString("studentId",studentId);
+                                    editor.putString("firstName",firstName);
+                                    editor.putString("lastName",lastName);
                                     editor.apply();
 
-                                    //Toast.makeText(LoginActivityPass.this, "poyra ni id : " + studentId + "\n poyra nu first-name : " + firstName + "\n poyra nu last name : " + lastName + "\n\n NAVA Poyra Avla se....", Toast.LENGTH_SHORT).show();
-x
+                                    Toast.makeText(LoginActivityPass.this, "poyra ni id : " + studentId + "\n poyra nu first-name : " + firstName + "\n poyra nu last name : " + lastName + "\n\n NAVA Poyra Avla se....", Toast.LENGTH_SHORT).show();
+
                                     startActivity(new Intent(LoginActivityPass.this, MainActivity.class));
 
                                 } else {

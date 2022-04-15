@@ -93,10 +93,11 @@
         <entry key="app/src/main/res/layout/activity_statistics.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_study_material.xml" value="0.1" />
         <entry key="app/src/main/res/layout/app_bar_side_menu.xml" value="0.18203125" />
+        <entry key="app/src/main/res/layout/book_list.xml" value="0.24635416666666668" />
         <entry key="app/src/main/res/layout/content_side_menu.xml" value="0.18203125" />
         <entry key="app/src/main/res/layout/fragment_assignments.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_attendance.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/fragment_books.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_books.xml" value="0.19015045166015626" />
         <entry key="app/src/main/res/layout/fragment_digital_library.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_live_classes.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_news.xml" value="0.1" />
