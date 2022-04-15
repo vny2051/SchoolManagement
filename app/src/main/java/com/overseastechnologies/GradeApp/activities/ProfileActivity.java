@@ -24,8 +24,19 @@ public class ProfileActivity extends MainActivity {
         SharedPreferences sharedPreferences = getSharedPreferences("StudentInfo", MODE_PRIVATE);
         String sId = sharedPreferences.getString("studentId","");
         String sName = sharedPreferences.getString("firstName","") + sharedPreferences.getString("lastName","");
+        String mobNo = sharedPreferences.getString("mobileNo","");
+        String email = sharedPreferences.getString("emailId","");
+        String rollNo = sharedPreferences.getString("rollNo","");
+        String registrationDate = sharedPreferences.getString("registrationDate","");
+        String parentsEmail = sharedPreferences.getString("parentsEmail","");
+        String parentsMobile = sharedPreferences.getString("parentsMobile","");
+        String address = sharedPreferences.getString("address","");
+
 
         binding.NameProfile.setText(sName);
+        binding.MobileProfile.setText(mobNo);
+        binding.EmailProfile.setText(email);
+        binding.IdProfile.setText(sId);
 
     }
 
