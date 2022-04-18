@@ -30,7 +30,7 @@ public class LoginActivityPass extends AppCompatActivity {
 
     ActivityLoginPassBinding binding;
     String apiUrl = "http://schoolmanagement.jihsuyaainfotech.in/api/student/login";
-    
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -109,19 +109,13 @@ public class LoginActivityPass extends AppCompatActivity {
 
                                     JSONObject data = response.getJSONObject("data");
 
-
-                                    String studentId = data.getString("studentID");
-                                    String firstName = data.getString("firstName");
-                                    String lastName = data.getString("lastName");
-
                                     SharedPreferences sharedPreferences = getSharedPreferences("StudentInfo", MODE_PRIVATE);
                                     SharedPreferences.Editor editor = sharedPreferences.edit();
-                                    editor.putString("studentId",studentId);
-                                    editor.putString("firstName",firstName);
-                                    editor.putString("lastName",lastName);
+                                    editor.putString("studentId", data.getString("studentID"));
+                                    editor.putString("fullName", data.getString("firstName") +" "+ data.getString("lastName"));
+                                    editor.putString("mobileNo", data.getString("mobileNo"));
+                                    editor.putString("emailId", data.getString("emailID"));
                                     editor.apply();
-
-                                    Toast.makeText(LoginActivityPass.this, "poyra ni id : " + studentId + "\n poyra nu first-name : " + firstName + "\n poyra nu last name : " + lastName + "\n\n NAVA Poyra Avla se....", Toast.LENGTH_SHORT).show();
 
                                     startActivity(new Intent(LoginActivityPass.this, MainActivity.class));
 

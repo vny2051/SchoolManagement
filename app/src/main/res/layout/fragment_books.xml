@@ -5,16 +5,13 @@
     android:layout_height="match_parent"
     tools:context="com.overseastechnologies.GradeApp.fragments.dashboard.FragmentNews">
 
-
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/bookListRecycler"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="16dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
-        android:id="@+id/bookListRecycler"/>
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp" />
 
-
-
-    </LinearLayout>
+</LinearLayout>
 

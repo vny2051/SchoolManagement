@@ -23,9 +23,10 @@ public class ProfileActivity extends MainActivity {
         //student all details
         SharedPreferences sharedPreferences = getSharedPreferences("StudentInfo", MODE_PRIVATE);
         String sId = sharedPreferences.getString("studentId","");
-        String sName = sharedPreferences.getString("firstName","") + sharedPreferences.getString("lastName","");
+        String sName = sharedPreferences.getString("fullName","");
         String mobNo = sharedPreferences.getString("mobileNo","");
         String email = sharedPreferences.getString("emailId","");
+
         String rollNo = sharedPreferences.getString("rollNo","");
         String registrationDate = sharedPreferences.getString("registrationDate","");
         String parentsEmail = sharedPreferences.getString("parentsEmail","");
