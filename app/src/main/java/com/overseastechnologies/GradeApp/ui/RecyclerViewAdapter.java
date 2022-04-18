@@ -15,10 +15,12 @@ import GradeApp.R;
 
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.MyViewHolder> {
 
-    private List<BooksList>  BookData;
-    private Context mcontext;
+     List<BooksList>  BookData;
+     Context mcontext;
 
     public RecyclerViewAdapter(List<BooksList> bookData, Context mcontext) {
+
+
         BookData = bookData;
         this.mcontext = mcontext;
     }
@@ -46,6 +48,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
     @Override
     public int getItemCount() {
+
         return BookData.size();
     }
 
