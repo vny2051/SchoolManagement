@@ -30,14 +30,13 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
         mContext = context;
     }
 
+
     @Override
     public Fragment getItem(int position) {
 
         Fragment fragment = null;
-        switch (position){
-            case 0 :
-                fragment = new FragmentBooks();
-                break;
+        if (position == 0) {
+            fragment = new FragmentBooks();
         }
         return fragment;
     }
@@ -51,6 +50,6 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
     @Override
     public int getCount() {
         // Show 2 total pages.
-        return 5;
+        return 1;
     }
 }
