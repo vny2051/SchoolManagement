@@ -83,7 +83,7 @@ public class StudyMaterialActivity extends MainActivity {
             @Override
             public void onResponse(JSONArray response) {
 
-                JSONObject  jsonObject=null;
+                JSONObject  jsonObject;
                 for (int i=0;i<response.length();i++){
 
 
