@@ -2,36 +2,27 @@ package com.overseastechnologies.GradeApp.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager.widget.ViewPager;
 
-import com.android.volley.Request;
-import com.android.volley.RequestQueue;
-import com.android.volley.Response;
-import com.android.volley.VolleyError;
-import com.android.volley.toolbox.JsonArrayRequest;
-import com.android.volley.toolbox.Volley;
 import com.google.android.material.tabs.TabLayout;
 import com.overseastechnologies.GradeApp.MainActivity;
-
 import com.overseastechnologies.GradeApp.ui.Studymaterial.SectionsPagerAdapter;
-
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import java.util.ArrayList;
-import java.util.List;
 
 import GradeApp.databinding.ActivityStudyMaterialBinding;
 
 public class StudyMaterialActivity extends MainActivity {
 
     ActivityStudyMaterialBinding binding;
+
+//    private static String URl ="http://schoolmanagement.jihsuyaainfotech.in/api/student/studyMaterialsList";
+//    JsonArrayRequest request;
+//    RequestQueue requestQueue;
+//    List<BooksList> listBooks;
+//     RecyclerView recyclerView;
+//    RecyclerViewAdapter recyclerViewAdapter;
+//
 
 
     @Override
@@ -48,6 +39,16 @@ public class StudyMaterialActivity extends MainActivity {
         TabLayout tabs = binding.tabs;
         tabs.setupWithViewPager(viewPager);
 
+//
+//        listBooks=new ArrayList<>();
+//        recyclerView =findViewById(GradeApp.R.id.bookListRecycler);
+//        jsonrequest();
+//
+//
+
+
+
+
 
         //for back button
         binding.ivBack.setOnClickListener(new View.OnClickListener() {
@@ -57,12 +58,55 @@ public class StudyMaterialActivity extends MainActivity {
             }
         });
     }
-
+//
+//    private void jsonrequest() {
+//        RequestQueue queue= Volley.newRequestQueue(this);
+//        request= new JsonArrayRequest(Request.Method.POST,URl,null, new Response.Listener<JSONArray>() {
+//            @Override
+//            public void onResponse(JSONArray response) {
+//
+//                JSONObject  jsonObject;
+//                for (int i=0;i<response.length();i++){
+//
+//
+//                    try {
+//                        jsonObject =response.getJSONObject(i);
+//
+//                        BooksList booksList= new BooksList();
+//                        booksList.setName(jsonObject.getString("name").toString());
+//                        booksList.setBook_url(jsonObject.getString("bookurl").toString());
+//
+//                        listBooks.add(booksList);
+//                    } catch (JSONException e) {
+//                        e.printStackTrace();
+//                    }
+//
+//                }
+//
+//
+//                recyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
+//                recyclerViewAdapter=new RecyclerViewAdapter(listBooks , getApplicationContext());
+//                recyclerView.setAdapter(recyclerViewAdapter);
+//
+//            }
+//
+//
+//        }, new Response.ErrorListener() {
+//            @Override
+//            public void onErrorResponse(VolleyError error) {
+//                Log.d("tag","onErrorResponse:"+ error.getMessage());
+//
+//            }
+//        });
+//
+//
+//        queue.add(request);
+//    }
 
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        startActivity(new Intent(this, MainActivity.class));
+        startActivity(new Intent(this,MainActivity.class));
         finish();
     }
 }
