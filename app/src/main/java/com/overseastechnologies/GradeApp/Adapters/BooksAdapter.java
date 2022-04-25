@@ -1,4 +1,4 @@
-package com.overseastechnologies.GradeApp.Adapters;
+package com.overseastechnologies.GradeApp.adapters;
 
 import android.content.Context;
 import android.text.method.LinkMovementMethod;

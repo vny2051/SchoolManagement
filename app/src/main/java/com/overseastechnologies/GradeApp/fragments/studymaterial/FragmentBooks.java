@@ -23,7 +23,7 @@ import com.android.volley.toolbox.JsonArrayRequest;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.JsonRequest;
 import com.android.volley.toolbox.Volley;
-import com.overseastechnologies.GradeApp.Adapters.BooksAdapter;
+import com.overseastechnologies.GradeApp.adapters.BooksAdapter;
 import com.overseastechnologies.GradeApp.Books;
 import com.overseastechnologies.GradeApp.activities.LoginActivityPass;
 
@@ -54,7 +54,7 @@ public class FragmentBooks extends Fragment {
     FragmentBooksBinding binding;
 
     RecyclerView recyclerView;
-    List<Books> list1 = new ArrayList<Books>();
+    List<Books> list1;
     BooksAdapter booksAdapter;
     String apiUrl = "http://schoolmanagement.jihsuyaainfotech.in/api/student/studyMaterialsList";
 
