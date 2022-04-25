@@ -31,10 +31,10 @@ import GradeApp.databinding.ActivityLiveclassesBinding;
 public class LiveClassesActivity extends MainActivity {
 
     RecyclerView recyclerView;
-    List<Liveclass> liveListClass;
+//    List<Liveclass> liveListClass;
     private static  String URL = "";
 
-    LiveClassAdapter liveClassAdapter;
+//    LiveClassAdapter liveClassAdapter;
 
 
 
@@ -50,10 +50,10 @@ public class LiveClassesActivity extends MainActivity {
         SectionsPagerAdapter sectionsPagerAdapter = new SectionsPagerAdapter(LiveClassesActivity.this, getSupportFragmentManager());
 
         recyclerView=findViewById(R.id.liveClassList);
-        liveListClass= new ArrayList<>();
+//        liveListClass= new ArrayList<>();
 
 
-        extractLiveClass();
+//        extractLiveClass();
 
 
 
@@ -77,45 +77,45 @@ public class LiveClassesActivity extends MainActivity {
         });
     }
 
-    private void extractLiveClass() {
-
-        RequestQueue queue= Volley.newRequestQueue(this);
-
-        JsonArrayRequest jsonArrayRequest=new JsonArrayRequest(Request.Method.POST, URL, null, new Response.Listener<JSONArray>() {
-            @Override
-            public void onResponse(JSONArray response) {
-                for (int i = 0; i < response.length(); i++) {
-                    try {
-                        JSONObject liveObject = response.getJSONObject(i);
-
-                        Liveclass liveclass = new Liveclass();
-                        liveclass.setSubjectName(liveObject.getString("subjectName").toString());
-                        liveclass.setClassUrl(liveObject.getString("URL").toString());
-
-                        liveListClass.add(liveclass);
-
-
-                    } catch (JSONException e) {
-                        e.printStackTrace();
-                    }
-                }
-
-                recyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
-                liveClassAdapter=new LiveClassAdapter(getApplicationContext() ,liveListClass);
-                recyclerView.setAdapter(liveClassAdapter);
-
-            }
-        }, new Response.ErrorListener() {
-            @Override
-            public void onErrorResponse(VolleyError error) {
-                Log.d("tag","onErrorResponse"+error.getMessage());
-
-            }
-        });
-
-
-        queue.add(jsonArrayRequest);
-    }
+//    private void extractLiveClass() {
+//
+//        RequestQueue queue= Volley.newRequestQueue(this);
+//
+//        JsonArrayRequest jsonArrayRequest=new JsonArrayRequest(Request.Method.POST, URL, null, new Response.Listener<JSONArray>() {
+//            @Override
+//            public void onResponse(JSONArray response) {
+//                for (int i = 0; i < response.length(); i++) {
+//                    try {
+//                        JSONObject liveObject = response.getJSONObject(i);
+//
+//                        Liveclass liveclass = new Liveclass();
+//                        liveclass.setSubjectName(liveObject.getString("subjectName").toString());
+//                        liveclass.setClassUrl(liveObject.getString("URL").toString());
+//
+//                        liveListClass.add(liveclass);
+//
+//
+//                    } catch (JSONException e) {
+//                        e.printStackTrace();
+//                    }
+//                }
+//
+//                recyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
+//                liveClassAdapter=new LiveClassAdapter(getApplicationContext() ,liveListClass);
+//                recyclerView.setAdapter(liveClassAdapter);
+//
+//            }
+//        }, new Response.ErrorListener() {
+//            @Override
+//            public void onErrorResponse(VolleyError error) {
+//                Log.d("tag","onErrorResponse"+error.getMessage());
+//
+//            }
+//        });
+//
+//
+//        queue.add(jsonArrayRequest);
+//    }
 
     @Override
     public void onBackPressed() {
