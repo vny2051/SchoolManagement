@@ -115,6 +115,8 @@ public class LoginActivityPass extends AppCompatActivity {
                                     editor.putString("fullName", data.getString("firstName") +" "+ data.getString("lastName"));
                                     editor.putString("mobileNo", data.getString("mobileNo"));
                                     editor.putString("emailId", data.getString("emailID"));
+                                    editor.putString("standard", data.getString("class"));
+                                    editor.putString("rollNo", data.getString("rollNo"));
                                     editor.apply();
 
                                     startActivity(new Intent(LoginActivityPass.this, MainActivity.class));
@@ -137,17 +139,18 @@ public class LoginActivityPass extends AppCompatActivity {
                         @Override
                         public Map<String, String> getHeaders() throws AuthFailureError {
                             Map<String, String> header = new HashMap<String, String>();
-                            header.put("Developerkey", " schlMana20Ge22");
+                            header.put("Developerkey", "schlMana20Ge22");
 
                             return header;
                         }
 
                         @Override
                         public byte[] getBody() {
-
                             //another way of sending body raw data...
 //                            String str = "{\"emailID\":\"" + email + "\",\"password\":\"" + password + "\"}";
 //                            return str.getBytes();
+
+
 
                             JSONObject bodyParameters = new JSONObject();
                             try {

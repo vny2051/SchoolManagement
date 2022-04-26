@@ -46,10 +46,10 @@
     <string name="tab_text_live_classes">Live-Classes</string>
 
     <!--    Assignments Fragment Strings-->
-    <string name="tab_text_live_assignments">Assignments Fragment</string>
+    <string name="tab_text_live_assignments">Assignments</string>
 
     <!--    Digital-library Fragment Strings-->
-    <string name="tab_text_live_digital_library">Digital Library Fragment</string>
+    <string name="tab_text_live_digital_library">Digital Library</string>
 
     <!--    Study Material Fragment Strings-->
     <string name="tab_text_study_books">Books</string>

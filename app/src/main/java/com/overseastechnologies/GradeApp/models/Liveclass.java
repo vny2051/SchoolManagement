@@ -1,4 +1,4 @@
-package com.overseastechnologies.GradeApp.activities;
+package com.overseastechnologies.GradeApp.models;
 
 public class Liveclass {
             private String  subjectName;

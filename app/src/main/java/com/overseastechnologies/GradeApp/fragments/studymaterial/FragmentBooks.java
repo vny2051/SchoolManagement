@@ -51,8 +51,6 @@ import GradeApp.databinding.FragmentBooksBinding;
  */
 public class FragmentBooks extends Fragment {
 
-    FragmentBooksBinding binding;
-
     RecyclerView recyclerView;
     List<Books> list1;
     BooksAdapter booksAdapter;
@@ -109,7 +107,7 @@ public class FragmentBooks extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        recyclerView = view.findViewById(R.id.bookListRecycler);
+        recyclerView = view.findViewById(R.id.rv_book_list);
         list1 = new ArrayList<>();
 
         method1();

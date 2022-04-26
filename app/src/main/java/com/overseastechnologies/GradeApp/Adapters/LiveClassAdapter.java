@@ -1,4 +1,4 @@
-package com.overseastechnologies.GradeApp.activities;
+package com.overseastechnologies.GradeApp.adapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -9,6 +9,8 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.overseastechnologies.GradeApp.models.Liveclass;
 
 import java.util.List;
 

@@ -6,7 +6,7 @@
     tools:context="com.overseastechnologies.GradeApp.fragments.dashboard.FragmentNews">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/bookListRecycler"
+        android:id="@+id/rv_book_list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginLeft="16dp"
