@@ -137,7 +137,6 @@ public class FragmentDigitalLibrary extends Fragment {
                         digitalLibrary.setUrl(jsonObject.getString("url"));
 
                         list.add(digitalLibrary);
-                        Toast.makeText(getContext(), list.get(1).getSubject(), Toast.LENGTH_SHORT).show();
                     }
                 } catch (JSONException e) {
                     e.printStackTrace();
