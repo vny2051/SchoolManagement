@@ -29,8 +29,8 @@ import GradeApp.databinding.ActivityLoginPassBinding;
 public class LoginActivityPass extends AppCompatActivity {
 
     ActivityLoginPassBinding binding;
-    String apiUrl = "http://schoolmanagement.jihsuyaainfotech.in/api/student/login";
 
+    String apiUrl = "http://schoolmanagement.jihsuyaainfotech.in/api/student/login";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -173,7 +173,6 @@ public class LoginActivityPass extends AppCompatActivity {
                 }
             }
         });
-
 
     }
 

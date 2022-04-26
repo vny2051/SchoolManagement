@@ -82,7 +82,6 @@ public class FragmentDigitalLibrary extends Fragment {
         return fragment;
     }
 
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -122,9 +121,9 @@ public class FragmentDigitalLibrary extends Fragment {
                     Toast.makeText(getContext(), response.getString("status"), Toast.LENGTH_SHORT).show();
 
                     JSONArray jsonArray = response.getJSONArray("data");
-                    for (int i = 0; i <= jsonArray.length(); i++) {
-                        Toast.makeText(getContext(), jsonArray.getJSONObject(i).getString("id") +"\n"+ jsonArray.getJSONObject(i).getString("url"), Toast.LENGTH_SHORT).show();
-                    }
+//                    for (int i = 0; i <= jsonArray.length(); i++) {
+//                        Toast.makeText(getContext(), jsonArray.getJSONObject(i).getString("id") +"\n"+ jsonArray.getJSONObject(i).getString("url"), Toast.LENGTH_SHORT).show();
+//                    }
 
 
                     for (int i = 0; i <= jsonArray.length(); i++) {
@@ -138,6 +137,7 @@ public class FragmentDigitalLibrary extends Fragment {
                         digitalLibrary.setUrl(jsonObject.getString("url"));
 
                         list.add(digitalLibrary);
+                        Toast.makeText(getContext(), list.get(1).getSubject(), Toast.LENGTH_SHORT).show();
                     }
                 } catch (JSONException e) {
                     e.printStackTrace();
