@@ -105,6 +105,8 @@ public class FragmentDigitalLibrary extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         recyclerView = view.findViewById(R.id.rv_digital_library);
+        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+
         list = new ArrayList<>();
 
         method1();
@@ -118,7 +120,7 @@ public class FragmentDigitalLibrary extends Fragment {
             public void onResponse(JSONObject response) {
 
                 try {
-                    Toast.makeText(getContext(), response.getString("status"), Toast.LENGTH_SHORT).show();
+//                    Toast.makeText(getContext(), response.getString("status"), Toast.LENGTH_SHORT).show();
 
                     JSONArray jsonArray = response.getJSONArray("data");
 //                    for (int i = 0; i <= jsonArray.length(); i++) {
@@ -141,7 +143,7 @@ public class FragmentDigitalLibrary extends Fragment {
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
-                recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+
                 digitalLibraryAdapter = new DigitalLibraryAdapter(getContext(), list);
                 recyclerView.setAdapter(digitalLibraryAdapter);
             }

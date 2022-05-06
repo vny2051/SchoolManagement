@@ -8,14 +8,17 @@
         <entry key="..\:/INTERNSHIP/Internship_Administrator/Main Work/sm_final/SchoolManagement-master_final/app/src/main/res/drawable/ic_baseline_menu_book_24.xml" value="0.1975" />
         <entry key="..\:/INTERNSHIP/Internship_Administrator/Main Work/sm_final/SchoolManagement-master_final/app/src/main/res/drawable/side_nav_bar.xml" value="0.1935" />
         <entry key="..\:/INTERNSHIP/Internship_Administrator/Main Work/sm_final/SchoolManagement-master_final/app/src/main/res/layout/activity_about.xml" value="0.225" />
+        <entry key="..\:/INTERNSHIP/Internship_Administrator/Main Work/sm_final/SchoolManagement-master_final/app/src/main/res/layout/activity_assignments.xml" value="0.225" />
         <entry key="..\:/INTERNSHIP/Internship_Administrator/Main Work/sm_final/SchoolManagement-master_final/app/src/main/res/layout/activity_contact.xml" value="0.25" />
         <entry key="..\:/INTERNSHIP/Internship_Administrator/Main Work/sm_final/SchoolManagement-master_final/app/src/main/res/layout/activity_dashboard.xml" value="0.22" />
-        <entry key="..\:/INTERNSHIP/Internship_Administrator/Main Work/sm_final/SchoolManagement-master_final/app/src/main/res/layout/activity_feedback.xml" value="0.225" />
+        <entry key="..\:/INTERNSHIP/Internship_Administrator/Main Work/sm_final/SchoolManagement-master_final/app/src/main/res/layout/activity_digital_library.xml" value="0.225" />
+        <entry key="..\:/INTERNSHIP/Internship_Administrator/Main Work/sm_final/SchoolManagement-master_final/app/src/main/res/layout/activity_feedback.xml" value="0.25" />
         <entry key="..\:/INTERNSHIP/Internship_Administrator/Main Work/sm_final/SchoolManagement-master_final/app/src/main/res/layout/activity_feestatus.xml" value="0.225" />
+        <entry key="..\:/INTERNSHIP/Internship_Administrator/Main Work/sm_final/SchoolManagement-master_final/app/src/main/res/layout/activity_liveclasses.xml" value="0.225" />
         <entry key="..\:/INTERNSHIP/Internship_Administrator/Main Work/sm_final/SchoolManagement-master_final/app/src/main/res/layout/activity_login_otp.xml" value="0.225" />
-        <entry key="..\:/INTERNSHIP/Internship_Administrator/Main Work/sm_final/SchoolManagement-master_final/app/src/main/res/layout/activity_login_pass.xml" value="0.25" />
+        <entry key="..\:/INTERNSHIP/Internship_Administrator/Main Work/sm_final/SchoolManagement-master_final/app/src/main/res/layout/activity_login_pass.xml" value="0.22" />
         <entry key="..\:/INTERNSHIP/Internship_Administrator/Main Work/sm_final/SchoolManagement-master_final/app/src/main/res/layout/activity_login_selection.xml" value="0.225" />
-        <entry key="..\:/INTERNSHIP/Internship_Administrator/Main Work/sm_final/SchoolManagement-master_final/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/INTERNSHIP/Internship_Administrator/Main Work/sm_final/SchoolManagement-master_final/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/INTERNSHIP/Internship_Administrator/Main Work/sm_final/SchoolManagement-master_final/app/src/main/res/layout/activity_profile.xml" value="0.25" />
         <entry key="..\:/INTERNSHIP/Internship_Administrator/Main Work/sm_final/SchoolManagement-master_final/app/src/main/res/layout/activity_splash.xml" value="0.22" />
         <entry key="..\:/INTERNSHIP/Internship_Administrator/Main Work/sm_final/SchoolManagement-master_final/app/src/main/res/layout/activity_study_material.xml" value="0.2" />

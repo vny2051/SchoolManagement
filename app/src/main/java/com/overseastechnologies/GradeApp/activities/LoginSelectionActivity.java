@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Toast;
 
 import GradeApp.databinding.ActivityLoginSelectionBinding;
 
@@ -29,7 +30,8 @@ public class LoginSelectionActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                startActivity(new Intent(LoginSelectionActivity.this, LoginActivityOtp.class) );
+                Toast.makeText(LoginSelectionActivity.this, "This feature will coming soon..!  :)", Toast.LENGTH_SHORT).show();
+//                startActivity(new Intent(LoginSelectionActivity.this, LoginActivityOtp.class) );
             }
         });
     }

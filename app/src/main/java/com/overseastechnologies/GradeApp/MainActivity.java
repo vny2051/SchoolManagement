@@ -47,11 +47,11 @@ public class  MainActivity extends AppCompatActivity {
         toggle.setDrawerSlideAnimationEnabled(true);
         toggle.syncState();
 
-        //landscape krie to data pachu load ni
-        if (savedInstanceState == null) {
-//            getSupportFragmentManager().beginTransaction().replace(R.id.main_fragment_container, new HomeFragment()).commit();
-
-        }
+//        //landscape krie to data pachu load ni
+//        if (savedInstanceState == null) {
+////            getSupportFragmentManager().beginTransaction().replace(R.id.main_fragment_container, new HomeFragment()).commit();
+//
+//        }
 
         //navigation drawer click listeners
         binding.navigationMenu.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
